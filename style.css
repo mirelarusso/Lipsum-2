@@ -1,280 +1,388 @@
-/* css Zen Garden submission 198 - 'The Original', by Joachim Shotter, http://www.bluejam.com/ */
+/* css Zen Garden submission 202 - 'Retro Theater', by Eric RogŽ, http://space-sheeps.info/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* All associated graphics copyright 2006, Joachim Shotter */
-/* Added: December 4th, 2006 */
+/* All associated graphics copyright 2006, Eric RogŽ */
+/* Added: December 12th, 2006 */
 
 
 /* IMPORTANT */
 /* This design is not a template. You may not reproduce it elsewhere without the 
    designer's written permission. However, feel free to study the CSS and use 
-   techniques you learn from it elsewhere. */
-   
+   techniques you learn from it elsewhere. */   
 
 
-body { 
-	font: 12px Arial, Helvetica, sans-serif; 
-	color: #CCCCCC; 
-	background: #000000 url(background.jpg) no-repeat center bottom; 
-	margin: 0px; 
-	}
-	
-p {
-	width: 354px;
-	padding-right: 25px;
-	text-align: justify;
-	color: #999999;
-	margin-bottom: 10px;
-	float: right;
-	clear: both;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	}
-	
-a, a:visited {
-	background :url(a_link.jpg) left center;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	height: 15px;
-	padding-right: 2px;
-	padding-left: 2px;
-	}
-	
-abbr{
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #FF0000;
-	}
-	
-.page-wrapper {
-	background: url(../zen-bg.jpg) no-repeat top left;
-	width: 770px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	}
-
-header {
-	background: url(css_zen.jpg) no-repeat;
-	background-position: left bottom;
-	display: block;
-	height: 459px;
-	width: 770px;
-	margin: 0px;
-	padding: 0px;
-	}
-
-header h1, header h2 {
-	margin: 0px;
-	padding: 0px;
-	}
-	
-header h1 span {
-	display:none;
-	}
-
-header h2 span {
-	display: none;
-	}
-
-.summary {
-	top: 175px;
-	width: 770px;
-	position: absolute;
-	font-size: 10px;
-	}
-	
-.summary p {
-	width: 376px;
-	text-transform: uppercase;
-	}
-
-.summary p:last-child{
-	float: left;
-	padding-left: 20px;
-	position: absolute;
-	top: 300px;
-	}
-
+a,
+a:visited
+{
+	text-decoration:none;
+	color:#ccc;
+	position:relative;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+div,
+p,
+body,
+ul,
+li,
+h1,
+h2,
+h3
+{
+	display:block;
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul
+{
+	list-style:none;
+}
+h1,
+h2,
 h3{
-	margin: 0px;
-	padding-bottom: 10px;
-	float: right;
-	}
-	
-h3 span{
-	display: none;
-	}
+	text-transform:uppercase;
+	font-weight:normal;
+}
+abbr
+{
+	border:none;
+}
+body
+{
+	position:relative;
+	background:#000 url('cote.png') repeat-y 50% 0%;
+	text-align:center;
+	z-index:1;
+}
+.page-wrapper
+{
+	position:relative;
+	width:450px;
+	margin:0 auto;
+	padding:230px 0 350px 0;
+	font-size:0.8em;
+	font-family:arial, sans serif;
+	background-color:#313131;
+	color:#b9b9b9;
+	text-align:left;
+	background-image:url('ecran.gif');
+	z-index:3;
+}
+p
+{
+	font-variant:small-caps;
+}
+.intro
+{
+	text-align:center;
+}
+h1
+{
+	width:450px;
+	height:258px;
+	background:url('titre.png') no-repeat 50% 0;
 
-.preamble h3{
-	background: url(preamble.jpg) no-repeat;
-	width: 434px;
-	height: 155px;
-	}
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+h2
+{
+	margin-top:-20px;
+	width:450px;
+	height:37px;
+	background:url('sous-titre.png') no-repeat 90% 0;
 
-.supporting h3{
-	background: url(supportingText.jpg) no-repeat;
-	width: 434px;
-	height: 169px;
-	}
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.summary
+{
+	width:80%;
+	margin:10em auto 0 auto;
+	text-align:center;
+}
+.summary p
+{
+	display:inline;
+	font-size:125%;
+	line-height:80%;
+}
+.preamble h3
+{
+	margin-top:1.5em;
+	font-size:80%;
+}
+.preamble p
+{
+	width:80%;
+	font-size:95%;
+	line-height:90%;
+	margin:0 auto;
+	margin:0 auto;
+}
+.supporting
+{
+	float:left;
+	padding:10em 0;
+}
+.supporting
+{
+	width:100%;
+	margin-top:2em;
+}
+.explanation
+{
+	float:left;
+	width:60%;
+}
+.explanation h3
+{
+	font-size:125%;
+	font-weight:bold;
+	text-align:right;
+	margin:0 5% 0 10%;
+	margin-bottom:-1.1em;
+}
 
-.participation h3{
-	background: url(participation.jpg) no-repeat;
-	width: 434px;
-	height: 129px;
-	}
-	
-.benefits h3{
-	background: url(benefits.jpg) no-repeat;
-	width: 434px;
-	height: 129px;
-	}
-	
-.requirements h3{
-	background: url(requirements.jpg) no-repeat;
-	width: 434px;
-	height: 129px;
-	}
+.explanation p
+{
+	line-height:4em;
+	text-align:right;
+	margin:0 5% 0 10%;
+	font-variant:normal;
+	text-transform:capitalize;
+	padding-bottom:4em;
+}
 
-.sidebar {
-	background: url(original.jpg) no-repeat;
-	background-position: left bottom;
-	color: #777777;
-	position: absolute;
-	top: 500px;
-	width: 321px;
-	padding-bottom: 431px;
-	}
-	
-.sidebar .wrapper {
-	background: url(linkList.jpg) repeat-y;
-	width: 100%;	
-	}
-	
-.design-selection ul{
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px 0px 180px 100px;
-	clear: both;
-	}
+.participation
+{
+	float:right;
+	width:40%;
+}
 
-.design-selection li {
-	margin-bottom: 15px;
-	width: 190px;
-	}
+.participation h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin:0 10% 0 5%;
+}
 
-.design-selection li a, .design-selection li a:visited  {
-	color:#999999;
-	background-image: none;
-	font-size: 15px;
-	font-weight: bold;
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	}
-
-.design-selection li a.designer-name, .design-selection li a.designer-name:visited {
-	display: inline;
-	background-image: none;
-	font-size: 10px;
-	color: #CCCCCC;
-	margin: 0px;
-	padding: 0px;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #FF0000;
-	}	
-
-.design-archives li, .zen-resources li {
-	margin-bottom: 5px;
-	}
-	
-.design-archives ul, .zen-resources ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px 0px 20px 115px;
-	clear: both;
-	}
-	
-.design-archives li a, .zen-resources li a{
-	font-size: 10px;
-	text-transform: uppercase;
-	background-image: none;
-	color: #999999;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #FF0000;
-	}
-	
-.design-selection li a:hover, .design-archives li a:hover, .zen-resources li a:hover {
-	color: #FFFFFF;
-	}
-
-.sidebar h3.select {
-	background: url(selectAdesign.jpg);
-	height: 90px;
-	width: 100%;
-	}
-
-.sidebar h3.archives {
-	background: url(archives.jpg);
-	margin-top: 250px;
-	height: 100px;
-	width: 100%;
-	}
-
-.sidebar h3.resources { 
-	background: url(resources.jpg);
-	height: 100px;
-	width: 100%;
-	}
-
-footer {
-	height: 80px;
-	clear: both;
-	padding-left: 305px;
-	padding-top: 150px;
-	font-size: 10px;
-	}
-
-
-footer a, footer a:visited {	
-	color: #999999;
-	background-image: none;
-	}
-	
-p:nth-child(6){
-	width: 340px;
-	float: right;
-	position: relative;
-	top: 150px;
-	font-size: 10px;
-	text-transform: uppercase;
-	margin: 0px;
-	padding: 0px;
-	text-align: right;
-	left: 90px;
-	}
-
-
-
-
-	
-/* 
-
-a:hover, a:active {}
-.intro {}
-.sidebar h3.select span {}
-.sidebar h3.favorites {}
-.sidebar h3.favorites span {}
-.sidebar h3.archives span {}
-.sidebar h3.resources span {}
-.zen-resources{}
-.extra1 {}
-
-*/
+.participation p
+{
+	line-height:2em;
+	margin:0 10% 0 5%;
+	font-weight:bold;
+	font-variant:normal;
+	text-transform:uppercase;
+}
+.benefits
+{
+	float:left;
+	clear:left;
+	margin-top:10em;
+	width:24%;
+}
+.benefits h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin:0 10% 0 5%;
+	text-align:center;
+	margin-bottom:1.2em;
+}
+.benefits p
+{
+	line-height:2em;
+	font-weight:bold;
+	margin:0 20px 0 5%;
+	font-variant:normal;
+	text-transform:uppercase;
+	text-align:center;
+}
+.requirements
+{
+	float:right;
+	margin:10em 0 0 0;
+	width:72%;
+	text-align:center;
+}
+.requirements h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin-bottom:1.2em;
+}
+.requirements p
+{
+	line-height:2em;
+	font-weight:bold;
+	font-variant:normal;
+	text-transform:uppercase;
+}
+.requirements p:nth-child(2)
+{
+	float:left;
+	/*margin-top:-1em;
+	line-height:4em;*/
+	width:20%;
+	margin-right:3%;
+	text-align:left;
+	text-transform:none;
+}
+.requirements p:nth-child(3)
+{
+	float:left;
+	width:36%;
+}
+.requirements p:nth-child(4),
+.requirements p:nth-child(5),
+.requirements p:nth-child(6)
+{
+	float:right;
+	width:35%;
+	text-align:right;
+	margin-right:2%;
+}
+.sidebar
+{
+	clear:both;
+}
+.design-selection h3,
+.design-archives h3,
+.zen-resources h3
+{
+	padding-top:7em;
+	font-size:125%;
+	font-weight:bold;
+	text-align:center;
+	clear:both;
+}
+.design-selection ul
+{
+	margin:0;
+	padding:0;
+}
+.design-selection li
+{
+	position:relative;
+	width:90%;
+	margin:.5em auto;
+	padding:0;
+	color:#313131;
+	border-bottom:2px dashed #b9b9b9;
+}
+.design-selection a
+{
+	position:relative;
+	top:5px;
+	padding:0 4px 0 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	background:url('ecran.gif');
+}
+.design-selection a.designer-name
+{
+	position:absolute;
+	right:-1px;
+	padding:0 0 0 4px;
+}
+.design-archives,
+.zen-resources
+{
+	clear:both;
+}
+.design-archives h3,
+.zen-resources h3
+{
+	padding-top:6em;
+	font-size:125%;
+	font-weight:bold;
+	text-align:center;
+}
+.design-archives ul,
+.zen-resources ul
+{
+	margin:1em 0 0 0;
+	width:100%;
+}
+.zen-resources ul
+{
+	padding-bottom:200px;
+	background:url('sponsorts.png') no-repeat 50% 100%;
+}
+.design-archives li,
+.zen-resources li
+{
+	text-align:center;
+}
+.design-archives a,
+.zen-resources a
+{
+	visibility:visible;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+footer
+{
+	position:absolute;
+	clear:both;
+	bottom:300px;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+.extra1
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:23.2% !important;
+	height:102px;
+	min-height:102px;
+	max-height:230px;
+	z-index:2;
+}
+.extra1::after
+{
+	content: " ";
+	display:block;
+	position:absolute;
+	bottom:-198px;
+	left:0;
+	width:100%;
+	height:428px;
+	background:url('haut1.png') no-repeat 50% 100%;
+}
+.extra2
+{
+	position:fixed !important;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:23.2% !important;
+	height:102px;
+	min-height:102px;
+	max-height:230px;
+	background:url('haut2.png') no-repeat 50% 100%;
+	z-index:4;
+}
+.extra3
+{
+	position:fixed !important;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:30% !important;
+	height:110px;
+	min-height:110px;
+	max-height:318px;
+	background:url('bas.png') no-repeat 50% 0%;
+	z-index:4;
+}
